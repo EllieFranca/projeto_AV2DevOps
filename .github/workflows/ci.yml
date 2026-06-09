@@ -1,0 +1,23 @@
+name: Docker CI
+
+on:
+  push:
+    branches: [ "main", "master" ]
+  pull_request:
+    branches: [ "main", "master" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout do código
+      uses: actions/checkout@v4
+
+    - name: Configurar Docker Buildx
+      uses: docker/setup-buildx-action@v3
+
+    # O Docker lê o arquivo único da raiz e monta a pasta app/ automaticamente
+    - name: Executar Docker Build Único
+      run: |
+        docker build . --file Dockerfile --tag sistema-biblioteca:${{ github.sha }}

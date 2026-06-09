@@ -1,0 +1,24 @@
+# banco de dados
+app/biblioteca.db
+*.db
+*.sqlite3
+
+# ambiente virtual - python
+venv/
+.venv/
+env/
+
+# arquivos temporaários - python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+
+# configurações e variáveis
+.env
+.env.local
+
+# sistema operacional
+.DS_Store
+Thumbs.db
