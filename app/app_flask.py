@@ -146,4 +146,4 @@ def delete_book(id):
     return redirect(url_for('list_books'))
 
 if __name__ == '__main__':
-    app.run(port=5000, debug=True)
+    app.run(host='0.0.0.0', port=5000, debug=True)
