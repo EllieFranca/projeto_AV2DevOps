@@ -5,7 +5,7 @@ import os
 from werkzeug.utils import secure_filename
 
 app = Flask(__name__)
-DATABASE_NAME = 'biblioteca.db'
+DATABASE_NAME = os.getenv('DATABASE_NAME', 'biblioteca.db')
 UPLOAD_FOLDER = 'static/assets'
 ALLOWED_EXTENSIONS = {'jpg', 'jpeg'}
 
@@ -146,4 +146,9 @@ def delete_book(id):
     return redirect(url_for('list_books'))
 
 if __name__ == '__main__':
-    app.run(port=5000, debug=True)
+    # Lê a porta e o modo debug do arquivo .env de forma dinâmica
+    port = int(os.getenv('PORT', 5000))
+    debug = os.getenv('FLASK_DEBUG', 'True') == 'True'
+    
+    # importante o host='0.0.0.0' para funcionar dentro do Docker!
+    app.run(host='0.0.0.0', port=port, debug=debug)
