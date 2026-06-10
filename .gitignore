@@ -10,7 +10,8 @@ env/
 
 # arquivos temporaários - python
 __pycache__/
-*.pyc
+*.pyc[cod]
+*$py.class
 *.pyo
 *.pyd
 .pytest_cache/
