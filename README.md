@@ -1,8 +1,8 @@
-\# 📚 Sistema de Gerenciamento de Biblioteca
+# 📚 Sistema de Gerenciamento de Biblioteca
 
 
 
-\## Descrição
+## Descrição
 
 
 
@@ -14,33 +14,33 @@ A aplicação permite cadastrar, visualizar, editar e remover livros do acervo.
 
 
 
-\## Tecnologias Utilizadas
+## Tecnologias Utilizadas
 
 
 
-\- Python
+- Python
 
-\- Flask
+- Flask
 
-\- SQLite
+- SQLite
 
-\- Docker
+- Docker
 
-\- Git
+- Git
 
-\- GitHub
+- GitHub
 
-\- HTML
+- HTML
 
-\- CSS
-
-
-
-\## Guia de Instalação
+- CSS
 
 
 
-\### Clonar o repositório
+## Guia de Instalação
+
+
+
+### Clonar o repositório
 
 
 
@@ -52,7 +52,7 @@ git clone URL\_DO\_REPOSITORIO
 
 
 
-\### Entrar na pasta do projeto
+### Entrar na pasta do projeto
 
 
 
@@ -64,7 +64,7 @@ cd projeto\_AV2DevOps
 
 
 
-\### Construir a imagem Docker
+### Construir a imagem Docker
 
 
 
@@ -76,7 +76,7 @@ docker build -t projeto-av2-devops .
 
 
 
-\### Executar o container
+### Executar o container
 
 
 
@@ -88,7 +88,7 @@ docker run -p 5000:5000 projeto-av2-devops
 
 
 
-\### Inicializar o banco de dados
+### Inicializar o banco de dados
 
 
 
@@ -100,7 +100,7 @@ docker exec -it NOME\_DO\_CONTAINER python app/init\_db.py
 
 
 
-\### Acessar a aplicação
+### Acessar a aplicação
 
 
 
@@ -112,17 +112,17 @@ http://localhost:5000
 
 
 
-\## Membros do grupo
+## Membros do grupo
 
 
 
-\-Maria Eduarda Ferreira Melo
+- Maria Eduarda Ferreira Melo - 01702522
 
-\-Elayne Rebeca Machado Silva
+- Elayne Rebeca Machado Silva - 01726848
 
-\-Elídia Maria Silva de França
+- Elídia Maria Silva de França - 01702889
 
-\-Vitória Gabrielly Cavalcante Sales
+- Vitória Gabrielly Cavalcante Sales - 01782494
 
 
 
