@@ -1,7 +1,5 @@
 # 📚 Sistema de Gerenciamento de Biblioteca
 
-
-
 ## Descrição
 
 
@@ -46,7 +44,7 @@ A aplicação permite cadastrar, visualizar, editar e remover livros do acervo.
 
 ```bash
 
-git clone URL\_DO\_REPOSITORIO
+git clone URL_DO_REPOSITORIO
 
 ```
 
@@ -58,7 +56,7 @@ git clone URL\_DO\_REPOSITORIO
 
 ```bash
 
-cd projeto\_AV2DevOps
+cd projeto_AV2DevOps
 
 ```
 
@@ -94,7 +92,7 @@ docker run -p 5000:5000 projeto-av2-devops
 
 ```bash
 
-docker exec -it NOME\_DO\_CONTAINER python app/init\_db.py
+docker exec -it NOME_DO_CONTAINER python app/init_db.py
 
 ```
 
